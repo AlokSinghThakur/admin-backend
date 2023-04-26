@@ -267,5 +267,5 @@ async function createToken(id, roles) {
     id: id,
     roles: roles,
   };
-  return await jwt.sign(payload, process.env.JWT_Key, { expiresIn: "500h" });
+  return await jwt.sign(payload, process.env.JWT_Key, { expiresIn: "1h" });
 }
